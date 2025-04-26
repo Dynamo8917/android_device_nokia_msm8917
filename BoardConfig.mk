@@ -28,7 +28,7 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom androidboot.memcg=true user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78B0000 loop.max_part=7 loglevel=0 loglevel=0 buildvariant=user veritykeyid=id:8f56f02c61394639f13af4e8cfe02d087e41b936
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-TARGET_KERNEL_CONFIG := E2M_defconfig
+TARGET_KERNEL_CONFIG := oitsminez-E2M-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/fih/E2M
 TARGET_KERNEL_CLANG_COMPILE := false
 
