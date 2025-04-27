@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/fih/E2M
+VINTF_PATH := vendor/fih/E2M/proprietary/vendor/etc/vintf/manifest
 
 # Architecture
 TARGET_ARCH := arm
@@ -60,7 +61,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 VENDOR_SECURITY_PATCH := 2021-08-01
 
 # VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/manifest.xml
+    $(VINTF_PATH)/android.hardware.atrace@1.0-service.xml \
+    $(VINTF_PATH)/android.hardware.cas@1.1-service.xml \
+    $(VINTF_PATH)/android.hardware.gnss@2.0-service-qti.xml \
+    $(VINTF_PATH)/vendor.qti.gnss@3.0-service.xml \
 
 # Inherit the proprietary files
-include vendor/fih/E2M/BoardConfigVendor.mk
+-include vendor/fih/E2M/BoardConfigVendor.mk
