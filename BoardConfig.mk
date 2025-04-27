@@ -62,7 +62,7 @@ VENDOR_SECURITY_PATCH := 2021-08-01
 
 # VINTF
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/manifest.xml
+    $(DEVICE_PATH)/manifest.xml \
     $(VINTF_PATH)/android.hardware.atrace@1.0-service.xml \
     $(VINTF_PATH)/android.hardware.cas@1.1-service.xml \
     $(VINTF_PATH)/android.hardware.gnss@2.0-service-qti.xml \
