@@ -14,6 +14,10 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
+# Binder trick
 TARGET_USES_64_BIT_BINDER := true
 
 # APEX
